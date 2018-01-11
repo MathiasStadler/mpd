@@ -16,5 +16,6 @@ radios["BBC1"]="http://streams.br.de/bayern1fran_1.m3u"
 for k in "${!radios[@]}"
 do
 	pls=${radios[$k]}
-	curl -s $pls | grep File1 | sed "s/File1=/$k, /" >> "$playlist"
+	#curl -s $pls | grep File1 | sed "s/File1=/$k, /" >> "$playlist"
+    curl -s $pls >> "$playlist"
 done
