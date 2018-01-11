@@ -6,7 +6,7 @@
 # This script is based on one found in what is assumed to be the public domain.
 
 set -e
-playlist=/var/lib/mpd/playlists/radio.m3u
+playlist=/tmp/radio.m3u
 rm -f $playlist
  
 declare -A radios
