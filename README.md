@@ -107,3 +107,18 @@ mpv $(youtube-dl -g "<url>")
 
 
 github.com/alexa-pi/AlexaPi. 
+
+
+
+
+mixer_type software
+
+
+
+# speaker-test - command-line speaker test tone generator for ALSA 
+- > speaker-test
+
+
+
+
+service rsyslog status

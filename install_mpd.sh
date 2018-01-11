@@ -3,7 +3,7 @@
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get autoremove
-sudo apt-get install mpc mpd alsa-utils jack
+sudo apt-get install mpc mpd alsa-utils jack ffmpeg
 
 #activate sound overlay
 if grep --quiet overlays=analog-codec /boot/armbianEnv.txt; then
@@ -15,6 +15,13 @@ else
 echo "overlays=analog-codec" >/boot/armbianEnv.txt
 EOF
 fi
+
+#source https://wiki.ubuntuusers.de/MPD/Server/
+sudo usermod -aG audio mpd     #Setzt die Gruppenzugehörigkeit
+#cat /etc/group | grep audio    #Zeigt Mitglieder der Gruppe audio an 
+
+
+
 
 #save org config file
 sudo cp /etc/mpd.conf /etc/mpd.conf_org_install
