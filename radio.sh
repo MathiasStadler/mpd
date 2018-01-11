@@ -1,12 +1,20 @@
 #!/bin/sh
- 
+
+# Idea from  
 # This code is copyright Stephen C Phillips (http://scphillips.com).
 # It is licensed using GPL v3.
  
-URLS=/var/local/bbc_radio/urls
+# adapt for local radio station BAYERN3 in germnay
 
-# get the radio URLs if they are not there
-[ ! -f $URLS ] && bbc_radio_update
+# refrech every start of computer
+URLS=/tmp/radio.m3u
+
+[ -e "${URLS}"] && rm ${URLS}
+
+./radio_playlist_update.sh
+
+
+
 
 case "$1" in
     "stop")

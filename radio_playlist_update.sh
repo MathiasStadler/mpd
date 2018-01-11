@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 
 # credits to
 # http://blog.scphillips.com/posts/2014/05/bbc-radio-on-the-raspberry-pi-v2/
@@ -11,7 +11,7 @@ rm -f $playlist
  
 declare -A radios
 
-radios["BBC1"]="http://streams.br.de/bayern1fran_1.m3u"
+radios["BBC1"]="http://streams.br.de/bayern3_1.m3u"
  
 for k in "${!radios[@]}"
 do
