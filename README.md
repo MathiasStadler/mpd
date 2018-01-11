@@ -122,3 +122,14 @@ mixer_type software
 
 
 service rsyslog status
+
+
+
+
+# ffmepeg -formats
+
+
+
+
+http://blog.scphillips.com/posts/2014/05/bbc-radio-on-the-raspberry-pi-v2/
+https://github.com/scp93ch/raspberry-radio/blob/master/scripts/radio
