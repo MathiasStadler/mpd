@@ -3,7 +3,7 @@
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get autoremove
-sudo apt-get install mpc mpd alsa-utils jack ffmpeg
+sudo apt-get install mpc mpd alsa-utils jack ffmpeg libavcodec-extra 
 
 #activate sound overlay
 if grep --quiet overlays=analog-codec /boot/armbianEnv.txt; then
