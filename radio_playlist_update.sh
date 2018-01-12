@@ -46,9 +46,14 @@ _line_count=0;
 while read _line; do
 _line_count=$(( _line_count + 1 ))
   if [[ $_line =~ ${REGEX_VALID_URL} ]] ; then 
+  #TODO in grün
   	echo -e  "${_line_count} => ${_line} OK"; 
   else 
 	echo -e  "\e[31m${_line_count} => ${_line} NOT OK\e[0m";
 	finish_error; 
   fi
 done <"${URLS}"
+
+
+#TODO static final vars  => readonly CONSTVAR=value
+#TODO log helper script  => FILE=/path/to/some/file ; [ -f $FILE ] && . $FILE
