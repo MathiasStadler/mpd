@@ -9,7 +9,7 @@
 # refrech every start of computer
 URLS=/tmp/radio.m3u
 
-[ -e "${URLS}"] && rm ${URLS}
+[ -e "${URLS}" ] && rm ${URLS}
 
 ./radio_playlist_update.sh
 
