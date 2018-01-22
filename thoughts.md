@@ -15,7 +15,11 @@ https://www.cnx-software.com/2017/07/30/how-to-setup-an-orange-pi-zero-diy-smart
 
 
 # wlan setting
+- missing
 
+
+# OrangePi as iTunes server with forked-daapd
+https://forum.armbian.com/topic/3254-orangepi-as-itunes-server-with-forked-daapd/
 
 <!-- markdownlint-enable -->
 /* spell-checker: enable */
