@@ -1,3 +1,16 @@
 {
-    "cSpell.enabled": false
+    "cSpell.enabled": true,
+    "cSpell.words": [
+        "Armbian",
+        "BAYERN",
+        "alsa",
+        "alsamixer",
+        "amixer",
+        "armv",
+        "autoremove",
+        "spidev",
+        "sunxi",
+        "systemctl",
+        "usbhost"
+    ]
 }
